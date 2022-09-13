@@ -1,0 +1,7 @@
+{{ define "main" }}
+{{ range (.Site.GetPage "section" "pages").Pages }}
+<div>
+    <a class="preview-title" href="{{ .Permalink }}">{{ .Title }}</a>
+</div>
+{{ end }}
+{{ end }}

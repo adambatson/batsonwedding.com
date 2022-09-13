@@ -6,8 +6,12 @@
 </head>
 
 <body>
-    {{ partial "header.html" }}
-    {{ block "main" . }}{{ end }}
+    {{ partial "header.html" . }}
+    <div class="page-wrapper flex justify-center mt-5">
+        <div class="page-content w-1/2 p-4 flex flex-col justify-around">
+            {{ block "main" . }}{{ end }}
+        </div>
+    </div>
 </body>
 
 </html>

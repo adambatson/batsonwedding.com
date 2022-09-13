@@ -1,3 +1,7 @@
-body {
-    color: red;
+$batson-navy: #00223e;
+$batson-coral: #ffa17f;
+
+header {
+    background: linear-gradient(135deg, $batson-navy 50%, $batson-coral 50%);
+    color: white;
 }

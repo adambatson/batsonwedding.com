@@ -2,6 +2,7 @@
 title: 'Our Story'
 date: 2022-09-13T18:15:49-04:00
 draft: true
+displayOrder: 1
 ---
 
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.

@@ -1,6 +1,13 @@
 <header>
     <div class="py-3 flex justify-around">
-        <div>The Batson Wedding</div>
-        <div>Adam &amp; Lauren</div>
+        <div><a href="/">The Batson Wedding</a></div>
+        <div>
+            <div class="flex flex-row justify-between">
+                {{ range (.Site.GetPage "section" "pages").Pages }}
+                <div class="mx-3"><a class="preview-title" href="{{ .Permalink }}">{{ .Title }}</a></div>
+                <!-- Range -->
+                {{ end }}
+            </div>
+        </div>
     </div>
 </header>

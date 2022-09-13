@@ -1,6 +1,22 @@
 $batson-navy: #00223e;
 $batson-coral: #ffa17f;
 
+body {
+    background-color: #fffdf7;
+}
+
+.page-content {
+    background-color: white;
+    line-height: 1.4;
+
+    p,
+    h1,
+    h2 {
+        // TODO extend tailwind
+        padding: 1rem;
+    }
+}
+
 header {
     background: linear-gradient(135deg, $batson-navy 50%, $batson-coral 50%);
     color: white;

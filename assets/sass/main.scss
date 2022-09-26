@@ -33,3 +33,15 @@ header {
     background: linear-gradient(135deg, $batson-navy 50%, $batson-coral 50%);
     color: white;
 }
+
+#fullscreen-nav {
+    @media screen and (max-width: 1080px) {
+        display: none;
+    }
+}
+
+#mobile-nav {
+    @media screen and (min-width: 1080px) {
+        display: none;
+    }
+}

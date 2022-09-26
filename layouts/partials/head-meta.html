@@ -8,4 +8,6 @@
 <meta property="og:title" content="{{ site.Title }}" />
 {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ $js := resources.Get "ts/app/main.ts" | js.Build }}
+<script src="{{ $js.Permalink }}" type="text/javascript" defer></script>
 <script src="https://cdn.tailwindcss.com"></script>

@@ -1,8 +1,9 @@
 $batson-navy: #082e68;
 $batson-coral: #f88379;
+$paper-background: #fffdf7;
 
 body {
-    background-color: #fffdf7;
+    background-color: $paper-background;
 }
 
 .page-content {
@@ -30,7 +31,8 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, $batson-navy 50%, $batson-coral 50%);
+    //background: linear-gradient(135deg, $batson-navy 50%, $batson-coral 50%);
+    background: $batson-coral;
     color: white;
 }
 
@@ -44,4 +46,8 @@ header {
     @media screen and (min-width: 1080px) {
         display: none;
     }
+}
+
+#mobile-nav-items {
+    border-top: 1px solid $batson-navy;
 }

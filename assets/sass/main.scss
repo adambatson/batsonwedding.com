@@ -27,14 +27,26 @@ $full-screen-width: 1080px;
     }
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     background-color: $paper-background;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrapper {
+    flex: 1 0 auto;
 }
 
 .page-content {
     background-color: white;
     line-height: 1.4;
     width: 50%;
+
     @include mobile-screen {
         width: 90%;
     }
@@ -66,6 +78,14 @@ header {
     //background: linear-gradient(135deg, $batson-navy 50%, $batson-coral 50%);
     background: $batson-coral;
     color: white;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: $batson-coral;
+    color: $batson-navy;
+    text-align: center;
+    font-weight: bold;
 }
 
 #header-wrapper {

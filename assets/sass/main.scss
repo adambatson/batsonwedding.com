@@ -2,6 +2,8 @@ $batson-navy: #082e68;
 $batson-coral: #f88379;
 $paper-background: #fffdf7;
 
+$full-screen-width: 1080px;
+
 body {
     background-color: $paper-background;
 }
@@ -10,7 +12,7 @@ body {
     background-color: white;
     line-height: 1.4;
     width: 50%;
-    @media screen and (max-width: 1080px) {
+    @media screen and (max-width: $full-screen-width) {
         width: 90%;
     }
 
@@ -36,14 +38,33 @@ header {
     color: white;
 }
 
+#header-wrapper {
+    display: flex;
+    @media screen and (min-width: $full-screen-width) {
+        justify-content: space-around;
+    }
+
+    @media screen and (max-width: $full-screen-width) {
+        justify-content: space-between;
+
+        #hamburger {
+            margin-right: 1rem;
+        }
+
+        #home-title {
+            margin-left: 1rem;
+        }
+    }
+}
+
 #fullscreen-nav {
-    @media screen and (max-width: 1080px) {
+    @media screen and (max-width: $full-screen-width) {
         display: none;
     }
 }
 
 #mobile-nav {
-    @media screen and (min-width: 1080px) {
+    @media screen and (min-width: $full-screen-width) {
         display: none;
     }
 }

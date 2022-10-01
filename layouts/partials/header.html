@@ -1,18 +1,17 @@
 <header>
-    <div class="py-3 flex justify-around">
-        <div><a href="/">The Batson Wedding</a></div>
+    <div id="header-wrapper" class="py-3">
+        <div><a id="home-title" href="/">The Batson Wedding</a></div>
         <div>
             <div class="flex flex-row justify-between" id="fullscreen-nav">
                 {{ partial "nav-items.html" . }}
             </div>
             <div id="mobile-nav">
-                <!-- USING CHECKBOX HACK -->
                 <div id="hamburger">&#9776;</div>
             </div>
         </div>
     </div>
     <div class="flex justify-center text-center">
-        <div id="mobile-nav-items" class="hidden w-80">
+        <div id="mobile-nav-items" class="hidden w-full">
             {{ partial "nav-items.html" . }}
         </div>
     </div>

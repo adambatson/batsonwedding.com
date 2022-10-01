@@ -1,17 +1,23 @@
+import { safeGetElementById } from './utils';
+
 export class NavBar {
     private _mobileNav: HTMLElement;
+    private _mobileNaveItems: HTMLElement;
 
     public constructor() {
-        var mobileNav = document.getElementById('mobile-nav');
-        if (mobileNav == null) {
-            throw new Error('#mobile-nav was null');
-        }
-        this._mobileNav = mobileNav;
+        this._mobileNav = safeGetElementById('mobile-nav');
+        this._mobileNaveItems = safeGetElementById('mobile-nav-items');
 
-        this._mobileNav.onclick = this.navBarClick;
+        this._mobileNav.onclick = () => {
+            this.navBarClick();
+        };
     }
 
     private navBarClick(): void {
-        alert('click oop');
+        if (this._mobileNaveItems.classList.contains('hidden')) {
+            this._mobileNaveItems.classList.remove('hidden');
+        } else {
+            this._mobileNaveItems.classList.add('hidden');
+        }
     }
 }

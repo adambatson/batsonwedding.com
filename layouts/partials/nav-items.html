@@ -1,4 +1,13 @@
+{{ $currentPage := . }}
+{{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+
+<div class="mx-3"><a class="nav-item" href="/">Home</a></div>
 {{ range (.Site.GetPage "section" "pages").Pages }}
-<div class="mx-3"><a class="preview-title" href="{{ .Permalink }}">{{ .Title }}</a></div>
-<!-- Range -->
+{{if eq .RelPermalink $page_url}}
+<div class="mx-3"><a class="nav-item active" href="{{ .Permalink }}">{{ .Title }}</a></div>
+{{else}}
+<div class="mx-3"><a class="nav-item" href="{{ .Permalink }}">{{ .Title }}</a></div>
+<!-- end if -->
+{{end}}
+<!-- end range -->
 {{ end }}

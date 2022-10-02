@@ -30,10 +30,25 @@ $full-screen-width: 1080px;
 html,
 body {
     height: 100%;
+
+    // Override tailwind
+    h1 {
+        font-size: 3em;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 2.3em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    font-family: 'Libre Baskerville', serif;
 }
 
 body {
-    background-color: $paper-background;
     display: flex;
     flex-direction: column;
 }
@@ -64,31 +79,38 @@ body {
         text-align: center;
     }
 
-    h2 {
-        font-size: 2.5em;
-    }
-
     h1 {
         text-decoration: underline;
-        font-size: 3em;
     }
 }
 
 header {
-    //background: linear-gradient(135deg, $batson-navy 50%, $batson-coral 50%);
-    background: $batson-coral;
-    color: white;
+    color: $batson-navy;
+    text-align: center;
+    h1 {
+        font-style: italic;
+    }
+    //background-color: $batson-coral;
 }
 
-footer {
+.nav-item {
+    &.active {
+        /* text-decoration: underline;
+        text-decoration-color: $batson-coral;
+        text-decoration-offset */
+        border-bottom: 1px solid $batson-coral;
+    }
+}
+
+/* footer {
     flex-shrink: 0;
     background-color: $batson-coral;
     color: $batson-navy;
     text-align: center;
     font-weight: bold;
-}
+} */
 
-#header-wrapper {
+/* #header-wrapper {
     display: flex;
 
     @include full-screen {
@@ -106,7 +128,7 @@ footer {
             margin-left: 1rem;
         }
     }
-}
+} */
 
 #fullscreen-nav {
     @include mobile-screen {

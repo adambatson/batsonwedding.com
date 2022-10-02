@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
     <div id="header-wrapper" class="py-3">
         <div><a id="home-title" href="/">The Batson Wedding</a></div>
         <div>
@@ -12,6 +12,19 @@
     </div>
     <div class="flex justify-center text-center">
         <div id="mobile-nav-items" class="hidden w-full">
+            {{ partial "nav-items.html" . }}
+        </div>
+    </div>
+</header> -->
+
+<header>
+    <div id="header-wrapper" class="py-3">
+        <div>
+            <h1>The Batson Wedding</h1>
+            <h2>August 26th, 2023 - Ottawa Ontario, Canada</h2>
+            <h3>485 Days To Go!</h3>
+        </div>
+        <div id="fullscreen-nav" class="flex justify-center mt-4">
             {{ partial "nav-items.html" . }}
         </div>
     </div>

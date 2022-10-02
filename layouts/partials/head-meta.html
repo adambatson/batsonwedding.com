@@ -11,3 +11,7 @@
 {{ $js := resources.Get "ts/app/main.ts" | js.Build }}
 <script src="{{ $js.Permalink }}" type="text/javascript" defer></script>
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">

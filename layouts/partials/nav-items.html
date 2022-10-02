@@ -5,9 +5,9 @@
 {{ range .Site.Menus.main }}
     {{if .Params.display}}
         {{if eq .URL $page_url}}
-        <div class="mx-3"><a class="nav-item active" href="{{ .URL }}">{{ .Name }}</a></div>
+        <div class="nav-item-wrapper mx-3"><a class="nav-item active" href="{{ .URL }}">{{ .Name }}</a></div>
         {{else}}
-        <div class="mx-3"><a class="nav-item" href="{{ .URL }}">{{ .Name }}</a></div>
+        <div class="nav-item-wrapper mx-3"><a class="nav-item" href="{{ .URL }}">{{ .Name }}</a></div>
         <!-- end if params display -->
         {{end}}
     <!-- end if eq Url -->

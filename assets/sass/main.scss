@@ -140,8 +140,24 @@ header {
     @include full-screen {
         display: none;
     }
+    font-size: 2.3em;
+
+    #mobile-nav-toggle {
+        content: '&#9776;';
+    }
 }
 
 #mobile-nav-items {
-    border-top: 1px solid $batson-navy;
+    display: flex;
+    .nav-item-wrapper {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+#mobile-nav-wrapper {
+    position: absolute;
+    z-index: 1000;
+    min-height: 100%;
+    background-color: white;
 }

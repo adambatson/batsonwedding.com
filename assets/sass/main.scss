@@ -90,45 +90,13 @@ header {
     h1 {
         font-style: italic;
     }
-    //background-color: $batson-coral;
 }
 
 .nav-item {
     &.active {
-        /* text-decoration: underline;
-        text-decoration-color: $batson-coral;
-        text-decoration-offset */
         border-bottom: 1px solid $batson-coral;
     }
 }
-
-/* footer {
-    flex-shrink: 0;
-    background-color: $batson-coral;
-    color: $batson-navy;
-    text-align: center;
-    font-weight: bold;
-} */
-
-/* #header-wrapper {
-    display: flex;
-
-    @include full-screen {
-        justify-content: space-around;
-    }
-
-    @include mobile-screen {
-        justify-content: space-between;
-
-        #hamburger {
-            margin-right: 1rem;
-        }
-
-        #home-title {
-            margin-left: 1rem;
-        }
-    }
-} */
 
 #fullscreen-nav {
     @include mobile-screen {
@@ -160,4 +128,27 @@ header {
     z-index: 1000;
     min-height: 100%;
     background-color: white;
+    animation: slideIn 0.5s forwards;
+
+    &.hidden-animate {
+        animation: slideOut 0.5s forwards;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-900px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-900px);
+    }
 }

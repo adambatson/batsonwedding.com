@@ -16,8 +16,10 @@ export class NavBar {
     private navBarClick(): void {
         if (this._mobileNavewrapper.classList.contains('hidden')) {
             this._mobileNavewrapper.classList.remove('hidden');
+        } else if (this._mobileNavewrapper.classList.contains('hidden-animate')) {
+            this._mobileNavewrapper.classList.remove('hidden-animate');
         } else {
-            this._mobileNavewrapper.classList.add('hidden');
+            this._mobileNavewrapper.classList.add('hidden-animate');
         }
     }
 }

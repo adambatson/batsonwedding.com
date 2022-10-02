@@ -1,3 +1,25 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "The Batson Wedding"
+
+[menu]
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 10
+[[menu.main]]
+  name = 'Itenerary'
+  url = '/pages/itenerary/'
+  weight = 20
+[[menu.main]]
+  name = 'Accomodations'
+  url = '/pages/accomodations/'
+  weight = 30
+[[menu.main]]
+  name = 'Faq'
+  url = '/pages/faq/'
+  weight = 40
+[[menu.main]]
+  name = 'Our Story'
+  url = '/pages/our-story/'
+  weight = 50

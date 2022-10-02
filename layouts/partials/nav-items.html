@@ -1,13 +1,12 @@
 {{ $currentPage := . }}
 {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
 
-<div class="mx-3"><a class="nav-item" href="/">Home</a></div>
-{{ range (.Site.GetPage "section" "pages").Pages }}
-{{if eq .RelPermalink $page_url}}
-<div class="mx-3"><a class="nav-item active" href="{{ .Permalink }}">{{ .Title }}</a></div>
+{{ range .Site.Menus.main }}
+{{if eq .URL $page_url}}
+<div class="mx-3"><a class="nav-item active" href="{{ .URL }}">{{ .Name }}</a></div>
 {{else}}
-<div class="mx-3"><a class="nav-item" href="{{ .Permalink }}">{{ .Title }}</a></div>
+<div class="mx-3"><a class="nav-item" href="{{ .URL }}">{{ .Name }}</a></div>
 <!-- end if -->
 {{end}}
-<!-- end range -->
-{{ end }}
+<!-- End Range-->
+{{end}}

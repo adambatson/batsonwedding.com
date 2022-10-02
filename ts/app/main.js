@@ -1,21 +1,41 @@
 (() => {
+  // ns-hugo:/home/runner/work/batsonwedding.com/batsonwedding.com/assets/ts/app/utils.ts
+  function safeGetElementById(id) {
+    var element = document.getElementById(id);
+    if (!element) {
+      throw new Error(`#${id} was null`);
+    }
+    return element;
+  }
+
   // ns-hugo:/home/runner/work/batsonwedding.com/batsonwedding.com/assets/ts/app/navbar.ts
   var NavBar = class {
     _mobileNav;
-    _mobileNaveItems;
+    _mobileNavewrapper;
+    _mobileNavToggle;
     constructor() {
-      this.activateCurrentPage();
+      this._mobileNav = safeGetElementById("mobile-nav");
+      this._mobileNavewrapper = safeGetElementById("mobile-nav-wrapper");
+      this._mobileNavToggle = safeGetElementById("mobile-nav-toggle");
+      this._mobileNav.onclick = () => {
+        this.navBarClick();
+      };
+      this._mobileNavToggle.onclick = () => {
+        this.toggleHamburger();
+      };
     }
     navBarClick() {
-      if (this._mobileNaveItems.classList.contains("hidden")) {
-        this._mobileNaveItems.classList.remove("hidden");
+      if (this._mobileNavewrapper.classList.contains("hidden")) {
+        this._mobileNavewrapper.classList.remove("hidden");
       } else {
-        this._mobileNaveItems.classList.add("hidden");
+        this._mobileNavewrapper.classList.toggle("hidden-animate");
       }
     }
-    activateCurrentPage() {
-      var navItems = document.getElementsByClassName("nav-item");
-      var currPage = window.location.pathname;
+    toggleHamburger() {
+      var lines = this._mobileNavToggle.querySelectorAll(".line");
+      lines.forEach((el) => {
+        el.classList.toggle("change");
+      });
     }
   };
 

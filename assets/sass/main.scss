@@ -4,15 +4,50 @@ $paper-background: #fffdf7;
 
 $full-screen-width: 1080px;
 
+@mixin headings {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @content;
+    }
+}
+
+@mixin full-screen {
+    @media screen and (min-width: $full-screen-width) {
+        @content;
+    }
+}
+
+@mixin mobile-screen {
+    @media screen and (max-width: $full-screen-width) {
+        @content;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
 body {
     background-color: $paper-background;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrapper {
+    flex: 1 0 auto;
 }
 
 .page-content {
     background-color: white;
     line-height: 1.4;
     width: 50%;
-    @media screen and (max-width: $full-screen-width) {
+
+    @include mobile-screen {
         width: 90%;
     }
 
@@ -23,12 +58,19 @@ body {
         padding: 1rem;
     }
 
-    h1 {
-        text-decoration: underline;
+    @include headings {
+        color: $batson-navy;
         font-weight: bold;
         text-align: center;
-        color: $batson-navy;
-        font-size: 3.8vw;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h1 {
+        text-decoration: underline;
+        font-size: 3em;
     }
 }
 
@@ -38,13 +80,22 @@ header {
     color: white;
 }
 
+footer {
+    flex-shrink: 0;
+    background-color: $batson-coral;
+    color: $batson-navy;
+    text-align: center;
+    font-weight: bold;
+}
+
 #header-wrapper {
     display: flex;
-    @media screen and (min-width: $full-screen-width) {
+
+    @include full-screen {
         justify-content: space-around;
     }
 
-    @media screen and (max-width: $full-screen-width) {
+    @include mobile-screen {
         justify-content: space-between;
 
         #hamburger {
@@ -58,13 +109,13 @@ header {
 }
 
 #fullscreen-nav {
-    @media screen and (max-width: $full-screen-width) {
+    @include mobile-screen {
         display: none;
     }
 }
 
 #mobile-nav {
-    @media screen and (min-width: $full-screen-width) {
+    @include full-screen {
         display: none;
     }
 }

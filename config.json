@@ -1,0 +1,34 @@
+{
+    "baseURL": "http://example.org/",
+    "languageCode": "en-us",
+    "title": "The Batson Wedding",
+    "menu": {
+        "main": [
+            {
+                "name": "Home",
+                "url": "/",
+                "weight": 10
+            },
+            {
+                "name": "Itenerary",
+                "url": "/pages/itenerary/",
+                "weight": 20
+            },
+            {
+                "name": "Accomodations",
+                "url": "/pages/accomodations/",
+                "weight": 30
+            },
+            {
+                "name": "Faq",
+                "url": "/pages/faq/",
+                "weight": 40
+            },
+            {
+                "name": "Our Story",
+                "url": "/pages/our-story/",
+                "weight": 50
+            }
+        ]
+    }
+}

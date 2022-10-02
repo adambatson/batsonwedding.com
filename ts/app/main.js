@@ -1,23 +1,10 @@
 (() => {
-  // ns-hugo:/home/runner/work/batsonwedding.com/batsonwedding.com/assets/ts/app/utils.ts
-  function safeGetElementById(id) {
-    var element = document.getElementById(id);
-    if (!element) {
-      throw new Error(`#${id} was null`);
-    }
-    return element;
-  }
-
   // ns-hugo:/home/runner/work/batsonwedding.com/batsonwedding.com/assets/ts/app/navbar.ts
   var NavBar = class {
     _mobileNav;
     _mobileNaveItems;
     constructor() {
-      this._mobileNav = safeGetElementById("mobile-nav");
-      this._mobileNaveItems = safeGetElementById("mobile-nav-items");
-      this._mobileNav.onclick = () => {
-        this.navBarClick();
-      };
+      this.activateCurrentPage();
     }
     navBarClick() {
       if (this._mobileNaveItems.classList.contains("hidden")) {
@@ -26,8 +13,15 @@
         this._mobileNaveItems.classList.add("hidden");
       }
     }
+    activateCurrentPage() {
+      var navItems = document.getElementsByClassName("nav-item");
+      var currPage = window.location.pathname;
+    }
   };
 
   // <stdin>
   var navBar = new NavBar();
+  function setNav(url) {
+    console.log("setting nav");
+  }
 })();

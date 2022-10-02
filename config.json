@@ -7,27 +7,32 @@
             {
                 "name": "Home",
                 "url": "/",
-                "weight": 10
+                "weight": 10,
+                "params": { "display": true }
             },
             {
                 "name": "Itenerary",
                 "url": "/pages/itenerary/",
-                "weight": 20
+                "weight": 20,
+                "params": { "display": true }
             },
             {
                 "name": "Accomodations",
                 "url": "/pages/accomodations/",
-                "weight": 30
+                "weight": 30,
+                "params": { "display": true }
             },
             {
                 "name": "Faq",
                 "url": "/pages/faq/",
-                "weight": 40
+                "weight": 40,
+                "params": { "display": true }
             },
             {
                 "name": "Our Story",
                 "url": "/pages/our-story/",
-                "weight": 50
+                "weight": 50,
+                "params": { "display": true }
             }
         ]
     }

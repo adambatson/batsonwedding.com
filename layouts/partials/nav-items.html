@@ -1,12 +1,16 @@
+<!-- prettier-ignore -->
 {{ $currentPage := . }}
 {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
 
 {{ range .Site.Menus.main }}
-{{if eq .URL $page_url}}
-<div class="mx-3"><a class="nav-item active" href="{{ .URL }}">{{ .Name }}</a></div>
-{{else}}
-<div class="mx-3"><a class="nav-item" href="{{ .URL }}">{{ .Name }}</a></div>
-<!-- end if -->
-{{end}}
-<!-- End Range-->
+    {{if .Params.display}}
+        {{if eq .URL $page_url}}
+        <div class="mx-3"><a class="nav-item active" href="{{ .URL }}">{{ .Name }}</a></div>
+        {{else}}
+        <div class="mx-3"><a class="nav-item" href="{{ .URL }}">{{ .Name }}</a></div>
+        <!-- end if params display -->
+        {{end}}
+    <!-- end if eq Url -->
+    {{end}}
+    <!-- End Range-->
 {{end}}

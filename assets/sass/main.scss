@@ -46,6 +46,7 @@ body {
     }
 
     font-family: 'Libre Baskerville', serif;
+    background-color: $batson-coral;
 }
 
 body {
@@ -58,7 +59,6 @@ body {
 }
 
 .page-content {
-    background-color: white;
     line-height: 1.4;
     width: 50%;
 
@@ -92,6 +92,11 @@ header {
     }
 }
 
+#header-wrapper {
+    background-image: url('/img/airplane-2.png') !important;
+    color: $batson-coral;
+}
+
 .nav-item {
     &.active {
         border-bottom: 1px solid $batson-coral;
@@ -102,6 +107,8 @@ header {
     @include mobile-screen {
         display: none;
     }
+    background-color: white;
+    color: $batson-navy;
 }
 
 #mobile-nav {
@@ -116,11 +123,11 @@ header {
         justify-content: space-around;
         min-height: 35px;
         .line {
-            background-color: $batson-navy;
             content: '';
             width: 35px;
             height: 5px;
             transition: 0.4s;
+            background-color: $batson-coral;
         }
 
         .change {
@@ -145,6 +152,7 @@ header {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+    color: $batson-navy;
 }
 
 #mobile-nav-wrapper {

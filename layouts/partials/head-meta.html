@@ -8,6 +8,15 @@
 <meta property="og:title" content="{{ site.Title }}" />
 {{ $style := resources.Get "sass/main.scss" | resources.ToCSS | resources.Minify }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+{{ $twStyles := resources.Get "css/tail.css" | postCSS }}
+{{ if .Site.IsServer }}
+<link rel="stylesheet" href="{{ $twStyles.RelPermalink }}" />
+{{ else }}
+{{ $twStyles := $twStyles | minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $twStyles.RelPermalink }}" integrity="{{ $twStyles.Data.Integrity }}" />
+{{ end }}
+
 {{ $js := resources.Get "ts/app/main.ts" | js.Build }}
 <script src="{{ $js.Permalink }}" type="text/javascript" defer></script>
 <script src="https://cdn.tailwindcss.com"></script>

@@ -1,0 +1,25 @@
+{
+  "name": "batsonwedding.com",
+  "version": "0.0.0",
+  "description": "The Batson Wedding Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adambatson/batsonwedding.com.git"
+  },
+  "author": "Adam J Batson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adambatson/batsonwedding.com/issues"
+  },
+  "homepage": "https://github.com/adambatson/batsonwedding.com#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.17",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.1.8"
+  }
+}

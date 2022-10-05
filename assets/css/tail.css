@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$batson-navy: #082e68;
+$batson-coral: #f88379;
+$paper-background: #fffdf7;
+
+$full-screen-width: 1080px;

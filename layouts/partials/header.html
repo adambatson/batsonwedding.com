@@ -1,24 +1,24 @@
-<header>
+<header class="text-center">
     <div id="header-wrapper" class="pt-3">
-        <div id="mobile-nav" class="flex justify-start ml-3">
+        <div id="mobile-nav" class="flex justify-start ml-3 text-3xl">
             <!-- <div id="mobile-nav-toggle">&#9776;</div> -->
-            <div id="mobile-nav-toggle">
-                <div class="line line1"></div>
-                <div class="line line2"></div>
-                <div class="line line3"></div>
+            <div id="mobile-nav-toggle" class="flex flex-col justify-around min-h-[35px]">
+                <div class="line bg-coral line1"></div>
+                <div class="line bg-coral line2"></div>
+                <div class="line bg-coral line3"></div>
             </div>
         </div>
-        <div id="mobile-nav-wrapper" class="hidden w-full">
-            <div id="mobile-nav-items" class="flex flex-col">
+        <div id="mobile-nav-wrapper" class="hidden w-full absolute z-50 min-h-full bg-white">
+            <div id="mobile-nav-items" class="flex flex-col text-navy">
                 {{ partial "nav-items.html" . }}
             </div>
         </div>
         <div>
-            <h1>The Batson Wedding</h1>
+            <h1 class="italic">The Batson Wedding</h1>
             <h2>August 26th, 2023 - Ottawa Ontario, Canada</h2>
             <h3>485 Days To Go!</h3>
         </div>
-        <div id="fullscreen-nav" class="flex justify-center mt-4 py-2">
+        <div id="fullscreen-nav" class="hidden justify-center mt-4 py-2 text-navy bg-white">
             {{ partial "nav-items.html" . }}
         </div>
     </div>

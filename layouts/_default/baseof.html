@@ -5,10 +5,10 @@
     {{ partial "head-meta.html" . }}
 </head>
 
-<body>
+<body class="h-full flex flex-col bg-coral">
     {{ partial "header.html" . }}
     <div class="page-wrapper flex justify-center mt-0">
-        <div class="page-content p-4 flex flex-col justify-around">
+        <div class="page-content leading-6 w-90 p-4 flex flex-col justify-around">
             {{ block "main" . }}{{ end }}
         </div>
     </div>

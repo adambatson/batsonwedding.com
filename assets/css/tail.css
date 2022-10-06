@@ -6,6 +6,8 @@ $batson-navy: #082e68;
 $batson-coral: #f88379;
 $paper-background: #fffdf7;
 
+$full-screen-width: 1080px;
+
 html,
 body {
     font-family: 'Libre Baskerville', serif;
@@ -31,5 +33,67 @@ header {
 .nav-item {
     &.active {
         border-bottom: 1px solid $batson-coral;
+    }
+}
+
+#mobile-nav {
+    @include full-screen {
+        display: none;
+    }
+
+    #mobile-nav-toggle {
+        .line {
+            content: '';
+            width: 35px;
+            height: 5px;
+            transition: 0.4s;
+        }
+
+        .change {
+            &.line1 {
+                transform: translate(0, 12px) rotate(-45deg);
+            }
+
+            &.line2 {
+                opacity: 0;
+            }
+
+            &.line3 {
+                transform: translate(0, -11px) rotate(45deg);
+            }
+        }
+    }
+}
+
+#mobile-nav-items {
+    .nav-item-wrapper {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+#mobile-nav-wrapper {
+    animation: slideIn 0.5s forwards;
+
+    &.hidden-animate {
+        animation: slideOut 0.5s forwards;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-900px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-9000px);
     }
 }

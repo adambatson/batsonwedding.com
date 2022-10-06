@@ -1,6 +1,3 @@
-$batson-navy: #082e68;
-$batson-coral: #f88379;
-
 $full-screen-width: 1080px;
 
 @mixin full-screen {
@@ -15,11 +12,6 @@ $full-screen-width: 1080px;
     }
 }
 
-html,
-body {
-    background-color: $batson-coral;
-}
-
 .page-content {
     @include mobile-screen {
         width: 90%;
@@ -30,7 +22,6 @@ body {
     @include mobile-screen {
         display: none;
     }
-    color: $batson-navy;
 }
 
 #mobile-nav {
@@ -44,7 +35,6 @@ body {
             width: 35px;
             height: 5px;
             transition: 0.4s;
-            background-color: $batson-coral;
         }
 
         .change {
@@ -68,7 +58,6 @@ body {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-    color: $batson-navy;
 }
 
 #mobile-nav-wrapper {

@@ -6,7 +6,17 @@ $batson-navy: #082e68;
 $batson-coral: #f88379;
 $paper-background: #fffdf7;
 
-$full-screen-width: 1080px;
+.page-content {
+    @screen md {
+        width: 50%;
+    }
+}
+
+#fullscreen-nav {
+    @screen md {
+        display: flex;
+    }
+}
 
 html,
 body {
@@ -37,7 +47,7 @@ header {
 }
 
 #mobile-nav {
-    @include full-screen {
+    @screen md {
         display: none;
     }
 

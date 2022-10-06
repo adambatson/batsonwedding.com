@@ -4,17 +4,6 @@ $paper-background: #fffdf7;
 
 $full-screen-width: 1080px;
 
-@mixin headings {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        @content;
-    }
-}
-
 @mixin full-screen {
     @media screen and (min-width: $full-screen-width) {
         @content;
@@ -29,77 +18,12 @@ $full-screen-width: 1080px;
 
 html,
 body {
-    height: 100%;
-
-    // Override tailwind
-    h1 {
-        font-size: 3em;
-        font-weight: bold;
-    }
-
-    h2 {
-        font-size: 2.3em;
-    }
-
-    h3 {
-        font-size: 2em;
-    }
-
-    font-family: 'Libre Baskerville', serif;
     background-color: $batson-coral;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.page-wrapper {
-    flex: 1 0 auto;
-}
-
 .page-content {
-    line-height: 1.4;
-    width: 50%;
-
     @include mobile-screen {
         width: 90%;
-    }
-
-    p,
-    h1,
-    h2 {
-        // TODO extend tailwind
-        padding: 1rem;
-    }
-
-    @include headings {
-        color: $batson-navy;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    h1 {
-        text-decoration: underline;
-    }
-}
-
-header {
-    color: $batson-navy;
-    text-align: center;
-    h1 {
-        font-style: italic;
-    }
-}
-
-#header-wrapper {
-    background-image: url('/img/airplane-2.png') !important;
-    color: $batson-coral;
-}
-
-.nav-item {
-    &.active {
-        border-bottom: 1px solid $batson-coral;
     }
 }
 
@@ -107,7 +31,6 @@ header {
     @include mobile-screen {
         display: none;
     }
-    background-color: white;
     color: $batson-navy;
 }
 
@@ -115,13 +38,8 @@ header {
     @include full-screen {
         display: none;
     }
-    font-size: 2.3em;
 
     #mobile-nav-toggle {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        min-height: 35px;
         .line {
             content: '';
             width: 35px;
@@ -147,7 +65,6 @@ header {
 }
 
 #mobile-nav-items {
-    display: flex;
     .nav-item-wrapper {
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -156,10 +73,6 @@ header {
 }
 
 #mobile-nav-wrapper {
-    position: absolute;
-    z-index: 1000;
-    min-height: 100%;
-    background-color: white;
     animation: slideIn 0.5s forwards;
 
     &.hidden-animate {

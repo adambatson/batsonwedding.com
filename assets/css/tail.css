@@ -7,3 +7,31 @@ $batson-coral: #f88379;
 $paper-background: #fffdf7;
 
 $full-screen-width: 1080px;
+
+html,
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+header {
+    color: $batson-navy;
+}
+
+#header-wrapper {
+    background-image: url('/img/airplane-2.png') !important;
+    color: $batson-coral;
+}
+
+.page-wrapper {
+    flex: 1 0 auto;
+}
+
+.nav-item {
+    &.active {
+        border-bottom: 1px solid $batson-coral;
+    }
+}

@@ -17,11 +17,12 @@
     },
     "homepage": "https://github.com/adambatson/batsonwedding.com#readme",
     "devDependencies": {
-        "autoprefixer": "^10.4.12",
-        "postcss": "^8.4.17",
-        "postcss-cli": "^10.0.0",
-        "postcss-mixins": "^9.0.4",
-        "postcss-nested": "^5.0.6",
-        "tailwindcss": "^3.1.8"
+        "autoprefixer": "10.4.12",
+        "postcss": "8.4.17",
+        "postcss-cli": "10.0.0",
+        "postcss-mixins": "9.0.4",
+        "postcss-nested": "5.0.6",
+        "tailwindcss": "3.1.8",
+        "ts-node": "10.9.1"
     }
 }

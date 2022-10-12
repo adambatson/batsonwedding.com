@@ -9,16 +9,16 @@
             </div>
         </div>
         <div id="mobile-nav-wrapper" class="hidden w-full absolute z-50 min-h-full bg-white">
-            <div id="mobile-nav-items" class="flex flex-col text-navy">
+            <div id="mobile-nav-items" class="flex flex-col text-navy text-3xl">
                 {{ partial "nav-items.html" . }}
             </div>
         </div>
-        <div>
-            <h1 class="italic text-7xl">The Batson Wedding</h1>
-            <h2>August 26th, 2023 - Ottawa Ontario, Canada</h2>
-            <h3>485 Days To Go!</h3>
+        <div class="mt-2">
+            <h1 class="italic md:text-6xl text-3xl">The Batson Wedding</h1>
+            <h2 class="md:text-2xl text-lg">August 26th, 2023 - Ottawa Ontario, Canada</h2>
+            <h3 class="md:text-2xl text-lg">485 Days To Go!</h3>
         </div>
-        <div id="fullscreen-nav" class="hidden justify-center mt-4 py-2 text-navy bg-white">
+        <div id="fullscreen-nav" class="hidden justify-center mt-4 py-2 text-navy bg-white text-xl">
             {{ partial "nav-items.html" . }}
         </div>
     </div>

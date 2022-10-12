@@ -1,3 +1,24 @@
 # batsonwedding.com
 
-Loosely based on https://github.com/capnfabs/paperesque
+## Depedencies
+
+-   Hugo
+-   NodeJs V12 or higher
+
+## Running dev serve
+
+Install dependencies with
+
+`npm ci`
+
+And run the server with
+
+```
+npm run dev
+```
+
+## Building
+
+```
+npm run build
+```

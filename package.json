@@ -9,8 +9,9 @@
         "css:watch": "npm run css -- --watch",
         "hugo": "hugo",
         "hugo:serve": "hugo serve -D",
+        "hugo:prod": "hugo --minify",
         "dev": "npm-run-all --parallel css:watch hugo:serve",
-        "build": "npm-run-all css hugo"
+        "build": "npm-run-all css hugo:prod"
     },
     "repository": {
         "type": "git",

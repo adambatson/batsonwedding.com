@@ -4,7 +4,13 @@
     "description": "The Batson Wedding Website",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "css": "postcss assets/css/main.css -o assets/post-css/main.css",
+        "css:watch": "npm run css -- --watch",
+        "hugo": "hugo",
+        "hugo:serve": "hugo serve -D",
+        "dev": "npm-run-all --parallel css:watch hugo:serve",
+        "build": "npm-run-all css hugo"
     },
     "repository": {
         "type": "git",

@@ -5,7 +5,8 @@ module.exports = {
         extend: {
             colors: {
                 coral: '#f88379',
-                navy: '#082e68',
+                /* navy: '#082e68', */
+                navy: '#032448',
             },
         },
     },

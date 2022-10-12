@@ -2,3 +2,5 @@ resources/*
 public/*
 
 node_modules/*
+
+assets/post-css/main.css

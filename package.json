@@ -4,7 +4,14 @@
     "description": "The Batson Wedding Website",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "css": "postcss assets/css/main.css -o assets/post-css/main.css",
+        "css:watch": "npm run css -- --watch",
+        "hugo": "hugo",
+        "hugo:serve": "hugo serve -D",
+        "hugo:prod": "hugo --minify",
+        "dev": "npm-run-all --parallel css:watch hugo:serve",
+        "build": "npm-run-all css hugo:prod"
     },
     "repository": {
         "type": "git",
@@ -18,6 +25,7 @@
     "homepage": "https://github.com/adambatson/batsonwedding.com#readme",
     "devDependencies": {
         "autoprefixer": "10.4.12",
+        "npm-run-all": "4.1.5",
         "postcss": "8.4.17",
         "postcss-cli": "10.0.0",
         "postcss-mixins": "9.0.4",

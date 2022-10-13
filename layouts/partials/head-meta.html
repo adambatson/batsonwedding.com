@@ -1,18 +1,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {{ if isset .Params "title" }}
-<title>{{ .Title }} | {{ site.Title }}</title>
+    <title>{{ .Title }} | {{ site.Title }}</title>
 {{ else }}
-<title>{{ site.Title }}</title>
+    <title>{{ site.Title }}</title>
 {{ end }}
 <meta property="og:title" content="{{ site.Title }}" />
 
-{{ $twStyles := resources.Get "post-css/main.css" }}
+{{ $styles := resources.Get "post-css/main.css" }}
 {{ if .Site.IsServer }}
-<link rel="stylesheet" href="{{ $twStyles.RelPermalink }}" />
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 {{ else }}
-{{ $twStyles := $twStyles | minify | fingerprint | resources.PostProcess }}
-<link rel="stylesheet" href="{{ $twStyles.RelPermalink }}" integrity="{{ $twStyles.Data.Integrity }}" />
+    {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
 {{ end }}
 
 {{ $js := resources.Get "ts/app/main.ts" | js.Build }}

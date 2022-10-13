@@ -8,6 +8,22 @@
     return element;
   }
 
+  // ns-hugo:/home/runner/work/batsonwedding.com/batsonwedding.com/assets/ts/app/countdown.ts
+  var CountDown = class {
+    _countDownSpan;
+    constructor() {
+      this._countDownSpan = safeGetElementById("countdown");
+      this.calculateCountdown();
+    }
+    calculateCountdown() {
+      const now = new Date();
+      const then = new Date("08/26/2023");
+      const diffInSeconds = then.getTime() - now.getTime();
+      const diffIndays = Math.ceil(diffInSeconds / (1e3 * 3600 * 24));
+      this._countDownSpan.innerHTML = diffIndays.toString() + " ";
+    }
+  };
+
   // ns-hugo:/home/runner/work/batsonwedding.com/batsonwedding.com/assets/ts/app/navbar.ts
   var NavBar = class {
     _mobileNav;
@@ -41,6 +57,7 @@
 
   // <stdin>
   var navBar = new NavBar();
+  var countDown = new CountDown();
   function setNav(url) {
     console.log("setting nav");
   }

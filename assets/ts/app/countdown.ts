@@ -1,5 +1,3 @@
-//import { DateTime } from 'luxon';
-import { DateTime } from 'luxon';
 import { safeGetElementById } from './utils';
 
 export class CountDown {
@@ -11,10 +9,11 @@ export class CountDown {
     }
 
     private calculateCountdown() {
-        const now = DateTime.now();
-        const then = DateTime.fromISO('2023-08-26T00:00:00');
+        const now = new Date();
+        const then = new Date('08/26/2023');
+        const diffInSeconds = then.getTime() - now.getTime();
+        const diffIndays = Math.ceil(diffInSeconds / (1000 * 3600 * 24));
 
-        const lapse = Math.ceil(then.diff(now, ['days']).days);
-        this._countDownSpan.innerHTML = lapse.toString();
+        this._countDownSpan.innerHTML = diffIndays.toString() + ' ';
     }
 }

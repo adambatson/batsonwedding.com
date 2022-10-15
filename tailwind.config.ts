@@ -4,9 +4,11 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                coral: '#f88379',
                 /* navy: '#082e68', */
+                coral: '#f88379',
                 navy: '#032448',
+                /* papery: '#fffdf7', */
+                papery: '#f0ebe0',
             },
         },
     },

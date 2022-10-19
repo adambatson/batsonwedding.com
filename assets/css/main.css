@@ -19,10 +19,6 @@ body {
     font-family: 'Libre Baskerville', serif;
 }
 
-.dancing-script {
-    font-family: 'Dancing Script', cursive;
-}
-
 #header-wrapper {
     background-image: url('/img/airplane-2.png') !important;
 }

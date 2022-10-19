@@ -10,6 +10,9 @@ module.exports = {
                 /* papery: '#fffdf7', */
                 papery: '#f0ebe0',
             },
+            fontFamily: {
+                'dancing-script': ['Dancing Script', 'cursive'],
+            },
         },
     },
     plugins: [],

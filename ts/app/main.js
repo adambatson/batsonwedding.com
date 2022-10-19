@@ -11,16 +11,32 @@
   // ns-hugo:/home/runner/work/batsonwedding.com/batsonwedding.com/assets/ts/app/countdown.ts
   var CountDown = class {
     _countDownSpan;
+    _countDownHeader;
+    _countDownTextEl;
+    _weddingDate = new Date("08/26/2023");
     constructor() {
       this._countDownSpan = safeGetElementById("countdown");
-      this.calculateCountdown();
+      this._countDownHeader = safeGetElementById("countdown-header");
+      this._countDownTextEl = safeGetElementById("countdown-text");
+      const diffInDays = this.calculateCountdown();
+      this.updateHtml(diffInDays);
     }
     calculateCountdown() {
       const now = new Date();
-      const then = new Date("08/26/2023");
+      const then = this._weddingDate;
       const diffInSeconds = then.getTime() - now.getTime();
-      const diffIndays = Math.ceil(diffInSeconds / (1e3 * 3600 * 24));
-      this._countDownSpan.innerHTML = diffIndays.toString() + " ";
+      const diffInDays = Math.ceil(diffInSeconds / (1e3 * 3600 * 24));
+      return diffInDays;
+    }
+    getDaysToGoText(diffInDays) {
+      return diffInDays === 1 ? "Day To Go!" : "Days To Go";
+    }
+    updateHtml(diffInDays) {
+      this._countDownSpan.innerHTML = `${diffInDays.toString()} `;
+      this._countDownTextEl.innerHTML = this.getDaysToGoText(diffInDays);
+      if (diffInDays > 0) {
+        this._countDownHeader.classList.remove("invisible");
+      }
     }
   };
 
@@ -58,7 +74,4 @@
   // <stdin>
   var navBar = new NavBar();
   var countDown = new CountDown();
-  function setNav(url) {
-    console.log("setting nav");
-  }
 })();

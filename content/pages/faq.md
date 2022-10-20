@@ -1,28 +1,25 @@
----
-title: 'Faq'
-date: 2022-09-13T18:16:11-04:00
-draft: true
-displayOrder: 1
----
-
-# FAQ
-
-## Are there any colours you would prefer me not to wear?
-
-White bitch
-
-## Will there be a shuttle to and/or from the hotel?
-
-Yes Bitch
-
-## Have you reserved hotel room blocks?
-
-Yeah
-
-## Are there any local places you’d recommend I visit while I’m in town?
-
-Vanier
-
-## Is there parking available near the ceremony and reception venues?
-
-Parking at BUC is $75/month
+{
+  "title": "Faq",
+  "date": "2022-09-13T18:16:11-04:00",
+  "draft": false,
+  "displayOrder": 1,
+  "type": "faq",
+  "questions": [
+    {
+      "question": "What is the dress code for your wedding?",
+      "answer": "Our Dress code for our wedding is formal or black-tie optional. We want our guests to be as comfortable as possible in the hot weather that we expect for the end of August, which can reach around 30℃. The venues are air-conditioned and please prepare for a very happening dance floor."
+    },
+    {
+      "question": "Will Lauren be taking Adam’s last name?",
+      "answer": "Yes, Lauren will be Lauren Batson. She’s very excited about it!"
+    },
+    {
+      "question": "Do you have a wedding hashtag?",
+      "answer": "Yes! Please feel free to use #getyourbatsonongoplay (yes, a play on All Star’s smash mouth). Please hashtag all your pictures so we can find them later. "
+    },
+    {
+      "question": "Where are you going on your Honeymoon?",
+      "answer": "Actually, the honeymoon is a surprise to Lauren, as Adam is planning it all on his own. Her only request is a beach, so she’ll see! ;P"
+    }
+  ]
+}

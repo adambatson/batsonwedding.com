@@ -23,3 +23,14 @@
     }
   ]
 }
+
+{{<content-section>}}
+  <div class="img-wrapper flex justify-center">
+        <img class="w-3/4" src="/img/lauram-3.jpg" alt="lauram" />
+  </div>
+  <div class="text-center mt-3">
+      <p>
+      If you have any additional questions, please email us at <a class="text-navy underline" href="mailto:thebatsonswedding@gmail.com">thebatsonswedding@gmail.com</a>
+      </p>
+  </div>
+{{</content-section>}}

@@ -2,6 +2,8 @@
 
     <h1 class="text-center text-navy underline text-4xl md:text-2xl">{{ .Title }}</h1>
 
+    {{.Content}}
+
     {{ range .Params.questions}}
         <!-- Desktop version -->
         <div class="bg-papery content-section rounded-3xl p-4 text-sm md:text-lg mt-6 hidden md:block">

@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <!-- rounded 3xl p-4 -->
-<div class="bg-papery content-section rounded-3xl p-4 text-sm md:text-lg">
+<div class="content-section">
     <div class="img-wrapper flex justify-center">
         <img class="w-3/4" src="/img/lauram-1.jpg" alt="lauram" />
     </div>
@@ -10,14 +10,39 @@
             Welcome to our wedding website! We're looking forward to sharing our special day with you!
             We will continue to post updates to this site as we get closer to the date!
         </p>
+    </div>
+</div>
 
-        <div class="text-navy font-bold mt-6">
-            <h2 class="font-dancing-script text-4xl md:text-6xl">Save The Date</h2>
-            <p>August 26th, 2023</br>
-                Adam James Batson <span class="hidden md:inline-block">&amp;</span><br class="md:hidden"> Lauren Blanche
-                Wallace</br>
-                Ottawa Ontario, Canada</br></p>
+
+<div class="content-section mt-6">
+
+    <div class="text-center text-navy font-dancing-script text-4xl md:text-6xl">
+        <h2>Save The Date</h2>
+    </div>
+
+    <div class="grid grid-cols-3 gap-y-12 text-navy mt-6">
+        <div class="text-center text-xl md:text-3xl">
+            <div class="font-dancing-script">Adam <br class="md:hidden"> James</div> Batson
         </div>
+        <div class="text-4xl md:text-6xl text-coral flex items-center justify-center">&amp;</div>
+        <div class="text-center text-xl md:text-3xl">
+            <div class="font-dancing-script">Lauren <br class="md:hidden"> Blanche</div> Wallace
+        </div>
+
+        <div>
+        </div>
+        <div class="text-4xl md:text-6xl text-coral flex items-center justify-around">
+            <div class="border-y-2 border-y-coral text-navy mr-4 text-2xl md:text-3xl">August</div>
+            <div>26</div>
+            <div class="text-navy ml-4 text-2xl md:text-3xl"><span class="border-y-2 border-y-coral">2023</span><span
+                    class="border-y-0">&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+        <div>
+        </div>
+        <div></div>
+        <div class="text-navy text-center">Ottawa ON, Canada</div>
+        <div></div>
     </div>
 </div>
 {{ end }}

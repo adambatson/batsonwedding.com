@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.content-section {
+    @apply bg-papery rounded-3xl p-4 text-sm md:text-lg;
+}
+
 .page-content {
     @screen md {
         width: 50%;

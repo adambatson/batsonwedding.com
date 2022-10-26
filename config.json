@@ -2,6 +2,10 @@
     "baseURL": "http://example.org/",
     "languageCode": "en-us",
     "title": "The Batson Wedding",
+    "params": {
+        "weddingEmail": "thebatsonswedding@gmail.com",
+        "hotelLink": "https://www.marriott.com/events/start.mi?id=1663627031475&key=GRP"
+    },
     "menu": {
         "main": [
             {

@@ -30,7 +30,7 @@
   </div>
   <div class="text-center mt-3">
       <p>
-      If you have any additional questions, please email us at <a class="text-navy underline" href="mailto:thebatsonswedding@gmail.com">thebatsonswedding@gmail.com</a>
+      If you have any additional questions, please email us at {{<wedding-email>}}
       </p>
   </div>
 {{</content-section>}}

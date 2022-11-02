@@ -4,6 +4,14 @@
 
 .content-section {
     @apply bg-papery rounded-3xl p-4 text-sm md:text-lg;
+
+    h2 {
+        @apply text-navy underline text-xl md:text-3xl text-center;
+    }
+
+    p {
+        @apply my-4;
+    }
 }
 
 .page-content {

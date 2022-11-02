@@ -1,3 +1,7 @@
 <div class="content-section mt-6">
-    {{.Inner}}
+    {{ if (.Get "is-md") }}
+        {{.Inner | markdownify}}
+    {{ else }}
+        {{.Inner}}
+    {{ end }}
 </div>

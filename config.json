@@ -5,7 +5,9 @@
     "params": {
         "weddingEmail": "thebatsonswedding@gmail.com",
         "hotelLink": "https://www.marriott.com/events/start.mi?id=1663627031475&key=GRP",
-        "hotelMapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11201.737883274327!2d-75.6562281!3d45.4207425!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba77c8b2f8da062!2sCourtyard%20by%20Marriott%20Ottawa%20East!5e0!3m2!1sen!2sca!4v1666745924983!5m2!1sen!2sca"
+        "hotelMapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11201.737883274327!2d-75.6562281!3d45.4207425!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba77c8b2f8da062!2sCourtyard%20by%20Marriott%20Ottawa%20East!5e0!3m2!1sen!2sca!4v1666745924983!5m2!1sen!2sca",
+        "churchMapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.741941401139!2d-75.79368848444625!3d45.35402127909977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce00d6df772803%3A0x44dae580f7326916!2sBritannia%20United%20Church!5e0!3m2!1sen!2sca!4v1672784840713!5m2!1sen!2sca",
+        "museumMapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.5551177780367!2d-75.6482712669733!3d45.458620374998894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce054cb99dbbaf%3A0xd2f20fba2426d346!2sCanada%20Aviation%20and%20Space%20Museum!5e0!3m2!1sen!2sca!4v1672784876044!5m2!1sen!2sca"
     },
     "menu": {
         "main": [

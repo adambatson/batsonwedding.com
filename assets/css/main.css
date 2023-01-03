@@ -9,6 +9,10 @@
         @apply text-navy underline text-xl md:text-3xl text-center;
     }
 
+    h3 {
+        @apply text-navy underline text-lg md:text-2xl text-center;
+    }
+
     p {
         @apply my-4;
     }

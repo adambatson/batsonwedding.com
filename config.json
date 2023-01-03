@@ -27,7 +27,7 @@
                 "params": { "display": true }
             },
             {
-                "name": "Faq",
+                "name": "FAQ",
                 "url": "/pages/faq/",
                 "weight": 40,
                 "params": { "display": true }

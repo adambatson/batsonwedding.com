@@ -1,0 +1,17 @@
+{{/* <iframe class="md:w-[80%]" src="{{.Get " map-url"}}" height="450" style="border:0;" allowfullscreen=""
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}}
+{{ $mapType := .Get "map-type"}}
+<div class="flex justify-center my-6">
+{{ if eq $mapType "hotel" }}
+<iframe class="md:w-[80%]" src="{{ .Site.Params.hotelMapUrl }}" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+{{ end }}
+{{ if eq $mapType "church" }}
+<iframe class="md:w-[80%]" src="{{ .Site.Params.churchMapUrl }}" height="450" style="border:0;" allowfullscreen=""
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{{ end }}
+{{ if eq $mapType "museum" }}
+<iframe class="md:w-[80%]" src="{{ .Site.Params.museumMapUrl }}" height="450" style="border:0;" allowfullscreen=""
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{{ end }}
+</div>

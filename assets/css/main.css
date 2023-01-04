@@ -110,3 +110,13 @@ body {
         transform: translateX(-9000px);
     }
 }
+
+.faq-answer {
+    li {
+        list-style: inside;
+    }
+}
+
+.link {
+    @apply text-navy underline;
+}

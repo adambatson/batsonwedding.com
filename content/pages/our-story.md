@@ -7,7 +7,7 @@ displayOrder: 1
 
 {{<content-section>}}
   <div class="img-wrapper flex justify-center">
-    <img class="w-3/4" src="/img/lauram-4.jpg" alt="lauram" />
+    <img class="w-3/4" src="/img/lauram-6.jpg" alt="lauram" />
   </div>
 {{</content-section>}}
 

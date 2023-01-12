@@ -14,22 +14,28 @@ displayOrder: 1
 {{<content-section is-md="true">}}
 ## According to Lauren
 
+Lauren and Adam met on August 16, 2015, while moving into the Lennox and Addington residence building, they both worked for the university as residence fellows (Adam on the 10th floor and Lauren on the 3rd floor). Actually, it’s a bit of a funny story, Lauren actually met Adam’s Dad, Steve first. Steve would commonly tell Lauren to use the elevators to move her stuff to her room and Lauren said she was fine walking her stuff up the 3 flights of stairs. (context: Lauren has a fear of elevators and hates using them). Lauren and her dad (Derek) later coined Steve “elevator guy” and would commonly see him throughout the day but never really saw his son. 
+
+Lauren describes going to a busy ballroom filled with Res fellows on the first day with everyone meeting their team. Lauren remembers Adam walking in and her thinking “I hope he’s on my team”, Lauren thought Adam was quite good looking. Adam doesn’t remember meeting Lauren, and definitely doesn’t think it was “love at first sight” . Turns out Lauren and Adam were on team Lennox. Throughout the year working together Lauren and Adam were commonly paired together, and funnily had no romantic feelings towards one another. At the end of the school year Lauren went into Adam’s room to get a thank you card sign for their manager and they talked for 5 hours straight and it legit felt like 5 minutes. Lauren left and texted her sister and best friend saying “ I have met the man I’m gonna marry”. Lauren and Adam went to have drinks the following night and then hung out a lot after at the Res fellow banquet. Lauren and Adam separated ways over the summer and really didn’t talk that much, but Lauren developed a big crush on Adam. 
+
+Lauren couldn't stop talking all summer about this amazing Adam she worked with, and when school started Lauren's friend stole her phone and texted Adam asking him to go for drinks one night. Adam and Lauren hung out and for about 4 months they would hang out every 2 weeks, commonly walking from campus to Marble Slab for ice cream, and Lauren inviting Adam over for dinner and to watch the Blue Jays playoffs games. On January 15, 2017, Adam asked Lauren to be his girlfriend, and the rest is history. 
+
+Their first date was January 16, 2017 at Felina’s Mexican restaurant and Marble Slab. 
+
+### Our proposal
+
+On August 21, 2021, Adam took Lauren on a weekend getaway to Montreal and took Lauren to the royal botanical gardens. Apparently, Adam tried to pop the question multiple times throughout the day, but other visitors kept on coming up and ruining the moment. Adam knew he wanted the moment to be just the two of them to make it special. It was the hottest day of the year and Lauren and Adam would need to take frequent breaks throughout the garden to seat. Lauren at one point while sitting noticed what was the ring box in Adam’s pocket and honestly thought, “what kinda weirdo brings his retainer case to a garden”.  Adam and Lauren wandered to the pond at the tree pavilion, under the weeping willows. This is where Adam got on one knee and proposed. Lauren of course said “yes”. They spent the day at Biodome zoo and going out for a nice dinner. 
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at condimentum justo. Donec rutrum non nisl nec fringilla. Vestibulum sagittis mauris ut volutpat scelerisque. Curabitur vitae interdum neque, at pulvinar dolor. Morbi malesuada urna eu felis sodales, sed consequat quam sollicitudin. Nunc vulputate vel magna nec bibendum. Suspendisse ac leo nec mi semper suscipit. Morbi nec tempor risus. Etiam eget sem nec eros mollis tempus. In lobortis lectus a ipsum vestibulum, sed scelerisque ex tincidunt. Aliquam eget erat vel erat accumsan dictum commodo id sem. Vestibulum faucibus est neque, in elementum ligula faucibus sed. Sed finibus condimentum lectus, ut maximus erat pulvinar eu. Sed eu nulla iaculis, tincidunt magna et, ornare lectus.
-
-Integer et libero volutpat, accumsan ante id, vulputate quam. Duis condimentum nisl sed dignissim sagittis. Aenean congue a sapien vitae rhoncus. Aenean vel sollicitudin lacus. Sed dui elit, pharetra porttitor odio nec, lacinia vulputate mauris. Suspendisse in mollis velit, ut ullamcorper erat. Maecenas at felis in felis dignissim congue sed quis odio. Curabitur vitae ante neque. Vivamus eros massa, porta quis lorem ut, egestas aliquam turpis. Aliquam faucibus lectus nunc, venenatis vulputate massa euismod vitae. Cras et nibh euismod, vehicula dui vel, porta eros. Aliquam quis augue ut velit ultricies vestibulum nec sed nulla. Etiam leo eros, efficitur id malesuada vitae, volutpat vitae felis.
-
-Donec blandit lobortis rhoncus. Integer et eros pulvinar est imperdiet placerat ac eu mi. Vivamus a tempor nisi, eget vestibulum mauris. Pellentesque nec tellus id nisl sagittis vehicula. Curabitur at tellus ac sem sodales vestibulum in ac dui. Aenean quis sem sed nunc vulputate sodales. Pellentesque et sapien ante. Maecenas luctus rhoncus leo quis eleifend. Morbi magna ex, lacinia et eros finibus, sollicitudin suscipit sapien. Praesent consectetur nisi mauris, id imperdiet elit venenatis ut. Proin risus ante, finibus fringilla nunc at, elementum auctor sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam dapibus malesuada diam, ac congue sapien elementum eget. Proin lectus orci, vulputate sagittis neque non, dignissim vehicula risus.
-
-Phasellus non gravida est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi sagittis nunc eu ultricies euismod. Cras eget vulputate ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris congue enim eros, eu finibus mauris tempus a. Vivamus cursus, erat a egestas consectetur, elit metus posuere enim, sed volutpat sem arcu id quam. Vestibulum et diam nulla. Donec tempor ut ipsum in porta. Integer tristique pellentesque mi, sed fringilla sapien congue id.
-
-Donec euismod ex a ex mollis placerat. Vestibulum pellentesque libero condimentum dui vulputate pretium. Sed ac lectus diam. Nam id nulla gravida, imperdiet nunc vel, posuere nisi. Suspendisse fermentum erat quis justo viverra rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec eu mauris nec elit vulputate dapibus. In ac nibh dui. Maecenas nec efficitur arcu. Nam bibendum ut neque nec molestie. Curabitur pharetra imperdiet scelerisque. Aenean dapibus molestie metus, eget luctus neque lobortis vitae. Aenean at augue a est aliquet luctus. Quisque finibus elementum dignissim. 
 {{</content-section>}}
 
 {{<content-section is-md="true">}}
 ## According to Adam
 
 We met at Carleton
+
+### Our proposal
+
+It happend in Montreal at the Botanical Gardens
 
 {{</content-section>}}

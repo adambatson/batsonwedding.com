@@ -18,8 +18,8 @@
                 "params": { "display": true }
             },
             {
-                "name": "Itenerary",
-                "url": "/pages/itenerary/",
+                "name": "Itinerary",
+                "url": "/pages/Itinerary/",
                 "weight": 20,
                 "params": { "display": true }
             },

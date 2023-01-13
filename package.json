@@ -30,8 +30,14 @@
         "postcss-cli": "10.0.0",
         "postcss-mixins": "9.0.4",
         "postcss-nested": "5.0.6",
+        "rollup": "^3.10.0",
         "tailwindcss": "3.1.8",
         "ts-node": "10.9.1"
     },
-    "dependencies": {}
+    "dependencies": {
+        "@babel/cli": "^7.20.7",
+        "@babel/core": "^7.20.12",
+        "@babel/preset-env": "^7.20.2",
+        "@babel/preset-typescript": "^7.18.6"
+    }
 }

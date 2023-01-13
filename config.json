@@ -42,5 +42,10 @@
                 "params": { "display": true }
             }
         ]
+    },
+    "security": {
+        "exec": {
+            "allow": ["^go$", "^npx$", "^postcss$", "^babel$"]
+        }
     }
 }

@@ -1,3 +1,6 @@
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 (() => {
   // ns-hugo:/home/runner/work/batsonwedding.com/batsonwedding.com/assets/ts/app/utils.ts
   function safeGetElementById(id) {
@@ -9,12 +12,12 @@
   }
 
   // ns-hugo:/home/runner/work/batsonwedding.com/batsonwedding.com/assets/ts/app/countdown.ts
-  var CountDown = class {
-    _countDownSpan;
-    _countDownHeader;
-    _countDownTextEl;
-    _weddingDate = new Date("08/26/2023");
+  var CountDown = class CountDown {
     constructor() {
+      _defineProperty(this, "_countDownSpan", void 0);
+      _defineProperty(this, "_countDownHeader", void 0);
+      _defineProperty(this, "_countDownTextEl", void 0);
+      _defineProperty(this, "_weddingDate", new Date("08/26/2023"));
       this._countDownSpan = safeGetElementById("countdown");
       this._countDownHeader = safeGetElementById("countdown-header");
       this._countDownTextEl = safeGetElementById("countdown-text");
@@ -41,11 +44,11 @@
   };
 
   // ns-hugo:/home/runner/work/batsonwedding.com/batsonwedding.com/assets/ts/app/navbar.ts
-  var NavBar = class {
-    _mobileNav;
-    _mobileNavewrapper;
-    _mobileNavToggle;
+  var NavBar = class NavBar {
     constructor() {
+      _defineProperty(this, "_mobileNav", void 0);
+      _defineProperty(this, "_mobileNavewrapper", void 0);
+      _defineProperty(this, "_mobileNavToggle", void 0);
       this._mobileNav = safeGetElementById("mobile-nav");
       this._mobileNavewrapper = safeGetElementById("mobile-nav-wrapper");
       this._mobileNavToggle = safeGetElementById("mobile-nav-toggle");
@@ -65,7 +68,7 @@
     }
     toggleHamburger() {
       var lines = this._mobileNavToggle.querySelectorAll(".line");
-      lines.forEach((el) => {
+      lines.forEach(el => {
         el.classList.toggle("change");
       });
     }

@@ -27,6 +27,9 @@ jobs:
             - name: Build
               run: npm run build
 
+            - name: Babel
+              run: npx babel public/ts/app/main.js --out-file public/ts/app/main.js
+
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3
               if: github.ref == 'refs/heads/main'

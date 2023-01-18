@@ -19,7 +19,7 @@
 }
 
 .page-content {
-    @screen md {
+    @screen lg {
         width: 50%;
     }
 }

@@ -13,6 +13,7 @@ function _toPrimitive(input, hint) { if (typeof input !== "object" || input === 
 
   // ns-hugo:/home/runner/work/batsonwedding.com/batsonwedding.com/assets/ts/app/countdown.ts
   var CountDown = class CountDown {
+    //private readonly _weddingDate: Date = new Date('10/19/2022');
     constructor() {
       _defineProperty(this, "_countDownSpan", void 0);
       _defineProperty(this, "_countDownHeader", void 0);
